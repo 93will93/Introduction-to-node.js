@@ -30,3 +30,15 @@ let anotherFunction = function(aFunction){
 }
 let result = anotherFunction(copyOfFunction);
 console.log(result);
+
+// ASYNCHRONOUS functions
+console.log("Starting");
+//setTimeout(callback, duration) is an asynchronous version of sleep
+setTimeout(() => {
+console.log("Done Waiting");
+}, 10000);
+console.log("Done, doing other things");
+for (let i = 0; i < 10; i++) {
+console.log(i);
+    
+    

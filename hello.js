@@ -17,3 +17,16 @@ person.isMale = true;
 person.fullname = person.name + " " + person.surname; //we can access the
 //variables using their names
 console.log(person);
+
+// FUNCTIONS
+let someFunction = function (someArgument, anotherArgument) {
+//do stuff
+    return someArgument + anotherArgument;
+}
+
+let copyOfFunction = someFunction; //Javascript assigns by reference
+let anotherFunction = function(aFunction){
+    return aFunction("Hello", "World"); //Calling the passed in function
+}
+let result = anotherFunction(copyOfFunction);
+console.log(result);

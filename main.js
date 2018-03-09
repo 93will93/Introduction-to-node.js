@@ -13,3 +13,9 @@ fs.readFile("./ELEN4010.txt", 'utf-8', (err, data) => {
     
     console.log(data);    
 })
+
+fs.readFile("./ELEN4010.txt", 'utf-8', (err, data) => {
+    if (err) throw err;
+    
+    console.log(data);    
+})
